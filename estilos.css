@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +14,7 @@
   padding: 10px;
   color: #7E364F;
 }
-.logo :hover {
+.logo:hover {
   transform: scale(1.2);
   transition: 0.7s;
 }
@@ -30,11 +31,12 @@
 /* Body */
 .fondo {
   background-color: #627B82;
+  min-height: 100vh;
 }
 
 h1 {
   text-align: center;
-  font-size: 40px;
+  font-size: 60px;
   color: #F1F1E6;
   padding-top: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -42,77 +44,171 @@ h1 {
 
 /* Seccion Inicio */
 .jumbotron h2 {
-  font-size: 30px;
+  font-size: 50px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #005665;
+}
+.jumbotron p {
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #005665;
+  padding-left: 40px;
+}
+
+.portada {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+  padding-bottom: 25px;
+}
+
+.img {
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+}
+.img:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+.img01 {
+  background-image: url(/multimedia/Dog1.jpg);
+}
+
+.img02 {
+  background-image: url(/multimedia/Dog2.jpg);
+}
+
+.img03 {
+  background-image: url(/multimedia/Dog3.jpg);
+}
+
+.img04 {
+  background-image: url(/multimedia/Dog4.jpg);
+}
+
+.img05 {
+  background-image: url(/multimedia/Dog5.jpg);
+}
+
+.img06 {
+  background-image: url(/multimedia/Dog6.jpg);
 }
 
 /* Fin Seccion Inicio */
 /* Seccion Productos */
-.productos {
+.galeria {
   display: grid;
   width: 100%;
   height: auto;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 30px;
 }
 
-.img {
-  width: 300px;
-  height: 250px;
+.imagen {
   background-color: #333;
   border: 2px solid #333;
+  background-size: cover;
+  background-position: center;
+}
+.imagen:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
 }
 
 .img1 {
-  background-image: url(../multimedia/armadilloArticulado3D.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(/multimedia/Dog7.jpg);
 }
 
 .img2 {
-  background-image: url(../multimedia/babyGroot3D.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(/multimedia/Dog8.jpg);
 }
 
 .img3 {
-  background-image: url(../multimedia/mate3D.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(/multimedia/Dog9.jpg);
 }
 
 .img4 {
-  background-image: url(../multimedia/mateStich3d.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(/multimedia/Dog10.jpg);
 }
 
 .img5 {
-  background-image: url(../multimedia/pharahOverwatch3D.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(/multimedia/Dog11.jpg);
 }
 
 .img6 {
-  background-image: url(../multimedia/plantera3D.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(/multimedia/Dog12.jpg);
 }
 
 .img7 {
-  background-image: url(../multimedia/DecoracionAnillos.JPG);
-  background-size: cover;
-  background-position: center;
+  background-image: url(/multimedia/Dog13.jpg);
 }
 
 .img8 {
-  background-image: url(../multimedia/Jarron.JPG);
+  background-image: url(/multimedia/Dog14.jpg);
+}
+
+.img9 {
+  background-image: url(/multimedia/Dog15.jpg);
+}
+
+.img10 {
+  background-image: url(/multimedia/Dog16.jpg);
+}
+
+/* Fin Seccion Galería */
+.fondoNosotros {
+  min-height: 100vh;
+  background-image: url(/multimedia/fondo.jpg);
   background-size: cover;
   background-position: center;
 }
+.fondoNosotros h1 {
+  background-color: #627B82;
+}
+.fondoNosotros h2 {
+  color: #F1F1E6;
+  font-size: 50px;
+  padding-left: 40px;
+  padding-top: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.fondoNosotros p {
+  color: coral;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  padding: 20px;
+  margin-left: 20px;
+  text-align: center;
+}
 
-/* Fin Seccion Productos */
+.fondoContacto {
+  background-image: url(/multimedia/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.fondoContacto p {
+  color: #F1F1E6;
+  font-size: 40px;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.formulario {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+.formulario label {
+  color: #F1F1E6;
+}
+
 /* Footer */
 .footer {
   background-color: #005665;
@@ -125,6 +221,31 @@ h1 {
   color: #7E364F;
   padding: 10px;
   font-size: 35px;
+}
+
+@media only screen and (min-width: 769px) {
+  .galeria {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 250px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  .galeria {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 250px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .galeria {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 250px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
