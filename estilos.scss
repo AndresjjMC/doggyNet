@@ -172,14 +172,46 @@ h1 {
         font-family: $font1;
     }
     p{
-        color: coral;
+        // color: coral;
         font-family: $font1;
-        font-size: 40px;
+        // font-size: 40px;
         padding: 20px;
         margin-left: 20px;
         text-align: center;
         
     }
+}
+
+// -------------------
+$fonts: (
+    20px: red,
+    30px: orange,
+    40px: green,
+);
+
+@each $size, $color in $fonts {
+    .linea--#{$size} {
+        font-size: $size;
+        color: $color;
+        background-color: #627b82;
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.parrafo {
+    font-size: 25px;
+    background-color: #7e364f;
+    color: #f1f1e6;
+    padding: 15px;
+}
+
+.parrafo--nuevo {
+
+    @extend .parrafo;
+    border: 10px solid salmon;
+    border-radius: 10px;
 }
 // Fin Seccion Nosotros
 // Seccion Contacto
@@ -212,7 +244,7 @@ h1 {
     color: $color3;
     text-align: center;
     i{
-        color: #7E364F;
+        color: crimson;
         padding: 10px;
         font-size: 35px;
     }
@@ -248,3 +280,5 @@ h1 {
         grid-row-gap: 20px;
     }
 }
+
+

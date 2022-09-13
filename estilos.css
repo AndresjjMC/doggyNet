@@ -179,12 +179,49 @@ h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .fondoNosotros p {
-  color: coral;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 40px;
   padding: 20px;
   margin-left: 20px;
   text-align: center;
+}
+
+.linea--20px {
+  font-size: 20px;
+  color: red;
+  background-color: #627b82;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.linea--30px {
+  font-size: 30px;
+  color: orange;
+  background-color: #627b82;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.linea--40px {
+  font-size: 40px;
+  color: green;
+  background-color: #627b82;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.parrafo, .parrafo--nuevo {
+  font-size: 25px;
+  background-color: #7e364f;
+  color: #f1f1e6;
+  padding: 15px;
+}
+
+.parrafo--nuevo {
+  border: 10px solid salmon;
+  border-radius: 10px;
 }
 
 .fondoContacto {
@@ -218,7 +255,7 @@ h1 {
   text-align: center;
 }
 .footer i {
-  color: #7E364F;
+  color: crimson;
   padding: 10px;
   font-size: 35px;
 }
@@ -246,6 +283,4 @@ h1 {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
   }
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */
