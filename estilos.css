@@ -77,27 +77,27 @@ h1 {
 }
 
 .img01 {
-  background-image: url(/multimedia/Dog1.jpg);
+  background-image: url(./multimedia/Dog1.jpg);
 }
 
 .img02 {
-  background-image: url(/multimedia/Dog2.jpg);
+  background-image: url(./multimedia/Dog2.jpg);
 }
 
 .img03 {
-  background-image: url(/multimedia/Dog3.jpg);
+  background-image: url(./multimedia/Dog3.jpg);
 }
 
 .img04 {
-  background-image: url(/multimedia/Dog4.jpg);
+  background-image: url(./multimedia/Dog4.jpg);
 }
 
 .img05 {
-  background-image: url(/multimedia/Dog5.jpg);
+  background-image: url(./multimedia/Dog5.jpg);
 }
 
 .img06 {
-  background-image: url(/multimedia/Dog6.jpg);
+  background-image: url(./multimedia/Dog6.jpg);
 }
 
 /* Fin Seccion Inicio */
@@ -122,49 +122,49 @@ h1 {
 }
 
 .img1 {
-  background-image: url(/multimedia/Dog7.jpg);
+  background-image: url(./multimedia/Dog7.jpg);
 }
 
 .img2 {
-  background-image: url(/multimedia/Dog8.jpg);
+  background-image: url(./multimedia/Dog8.jpg);
 }
 
 .img3 {
-  background-image: url(/multimedia/Dog9.jpg);
+  background-image: url(./multimedia/Dog9.jpg);
 }
 
 .img4 {
-  background-image: url(/multimedia/Dog10.jpg);
+  background-image: url(./multimedia/Dog10.jpg);
 }
 
 .img5 {
-  background-image: url(/multimedia/Dog11.jpg);
+  background-image: url(./multimedia/Dog11.jpg);
 }
 
 .img6 {
-  background-image: url(/multimedia/Dog12.jpg);
+  background-image: url(./multimedia/Dog12.jpg);
 }
 
 .img7 {
-  background-image: url(/multimedia/Dog13.jpg);
+  background-image: url(./multimedia/Dog13.jpg);
 }
 
 .img8 {
-  background-image: url(/multimedia/Dog14.jpg);
+  background-image: url(./multimedia/Dog14.jpg);
 }
 
 .img9 {
-  background-image: url(/multimedia/Dog15.jpg);
+  background-image: url(./multimedia/Dog15.jpg);
 }
 
 .img10 {
-  background-image: url(/multimedia/Dog16.jpg);
+  background-image: url(./multimedia/Dog16.jpg);
 }
 
 /* Fin Seccion Galería */
 .fondoNosotros {
   min-height: 100vh;
-  background-image: url(/multimedia/fondo.jpg);
+  background-image: url(./multimedia/fondo.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -225,7 +225,7 @@ h1 {
 }
 
 .fondoContacto {
-  background-image: url(/multimedia/fondo.jpg);
+  background-image: url(./multimedia/fondo.jpg);
   background-size: cover;
   background-position: center;
 }
