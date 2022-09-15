@@ -11,18 +11,17 @@ $font1: Verdana,Geneva,Tahoma,sans-serif;
 .logo {
     font-size: 40px;
     margin: 20px;
-    border: 2px solid $color3;
+    border: 2px solid #7E364F;
     background-color: rgba(51, 51, 51, 0.7);
     border-radius: 30px;
     padding: 10px;
-    color: #7E364F;
     &:hover{
         transform: scale(1.2);
         transition: 0.7s;
     }
 }
 .barraNav {
-        background-color: $color1;
+    background-color: $color1;
 }
 
 .navItems {
@@ -57,43 +56,62 @@ h1 {
         padding-left: 40px;
     }
 }
-.portada{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding-top: 90px;
-    padding-bottom: 25px;
+.carouselSlides{
+    width: 100%; 
 }
-.img{
-    width: 350px;
-    height: 350px;
-    background-size: cover;
-    background-position: center;
-    &:hover{
-        transform: scale(1.2);
-        transition: 0.5s;
+.servicios{
+    font-family: $font1;
+    h2{
+        text-align: center;
+        color: #F1F1E6;
+        font-size: 40px;
+        padding-top: 50px;
+    }
+    h3{
+        font-size: 35px;
+        text-align: center;
+        color: #333;
+        padding-top: 20px;
+    }
+    p{
+        font-size: 25px;
+        text-align: center;
+        padding-top: 30px;
+        color: #F1F1E6;
+        padding-left:30px;
+        padding-right: 30px;
+        text-shadow: 5px #333;
     }
 }
-.img01{
-    background-image: url(./multimedia/Dog1.jpg);
+.exteriores{
+    border-radius: 5px solid #333;
+    background-image: url(./multimedia/exteriores.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    margin-top: 20px;
+    border-radius: 20px;
+    
 }
-.img02{
-    background-image: url(./multimedia/Dog2.jpg);
+.estudio{
+    border-radius: 5px solid #333;
+    background-image: url(./multimedia/estudio.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    margin-top: 20px;
+    border-radius: 20px;   
 }
-.img03{
-    background-image: url(./multimedia/Dog3.jpg);
+.objetivo{
+    text-align: center;
+    color: #F1F1E6;
+    font-size: 35px;
+    margin-bottom: 0px;
+    padding: 30px;
+
 }
-.img04{
-    background-image: url(./multimedia/Dog4.jpg);
-}
-.img05{
-    background-image: url(./multimedia/Dog5.jpg);
-}
-.img06{
-    background-image: url(./multimedia/Dog6.jpg);
-}
+
+
 
 /* Fin Seccion Inicio */
 /* Seccion Productos */
@@ -110,48 +128,44 @@ h1 {
     background-size: cover;
     background-position: center;
     &:hover{
-        transform: scale(1.2);
+        transform: scale(1.1);
         transition: 0.5s;
     }
 }
 .img1 {
-    background-image: url(./multimedia/Dog7.jpg);
+    background-image: url(./multimedia/Dog1.jpg);
     
 }
 .img2 {
-    background-image: url(./multimedia/Dog8.jpg);
+    background-image: url(./multimedia/Dog2.jpg);
     
 }
 .img3 {
-    background-image: url(./multimedia/Dog9.jpg);
+    background-image: url(./multimedia/Dog3.jpg);
     
 }
 .img4 {
-    background-image: url(./multimedia/Dog10.jpg);
+    background-image: url(./multimedia/Dog4.jpg);
     
 }
 .img5 {
-    background-image: url(./multimedia/Dog11.jpg);
+    background-image: url(./multimedia/Dog5.jpg);
     
 }
 .img6 {
-    background-image: url(./multimedia/Dog12.jpg);
+    background-image: url(./multimedia/Dog6.jpg);
     
 }
 .img7 {
-    background-image: url(./multimedia/Dog13.jpg);
+    background-image: url(./multimedia/Dog7.jpg);
     
 }
 .img8 {
-    background-image: url(./multimedia/Dog14.jpg);
+    background-image: url(./multimedia/Dog8.jpg);
     
 }
 .img9 {
-    background-image: url(./multimedia/Dog15.jpg);
-    
-}
-.img10 {
-    background-image: url(./multimedia/Dog16.jpg);
+    background-image: url(./multimedia/Dog9.jpg);
     
 }
 /* Fin Seccion Galería */
@@ -172,46 +186,14 @@ h1 {
         font-family: $font1;
     }
     p{
-        // color: coral;
+        color: #79aab8;
         font-family: $font1;
-        // font-size: 40px;
+        font-size: 40px;
         padding: 20px;
         margin-left: 20px;
         text-align: center;
-        
+        margin-bottom: 0;
     }
-}
-
-// -------------------
-$fonts: (
-    20px: red,
-    30px: orange,
-    40px: green,
-);
-
-@each $size, $color in $fonts {
-    .linea--#{$size} {
-        font-size: $size;
-        color: $color;
-        background-color: #627b82;
-        border-radius: 10px;
-        width: 100%;
-        height: auto;
-    }
-}
-
-.parrafo {
-    font-size: 25px;
-    background-color: #7e364f;
-    color: #f1f1e6;
-    padding: 15px;
-}
-
-.parrafo--nuevo {
-
-    @extend .parrafo;
-    border: 10px solid salmon;
-    border-radius: 10px;
 }
 // Fin Seccion Nosotros
 // Seccion Contacto
@@ -223,7 +205,7 @@ $fonts: (
         color:$color3;
         font-size: 40px;
         padding: 20px;
-        background-color: #333;
+        background-color: transparent;
         border-radius: 10px;
         margin-right: 20px;
     }
@@ -243,8 +225,14 @@ $fonts: (
     font-size: 30px ;
     color: $color3;
     text-align: center;
+    a{
+        :hover{
+            transform:scale(1.5);
+            transition: 0.7s;
+        }
+    }
     i{
-        color: crimson;
+        color: #994663;
         padding: 10px;
         font-size: 35px;
     }
@@ -256,28 +244,62 @@ $fonts: (
 @media only screen and (min-width:769px) {
 
     .galeria {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: repeat(3, 250px);
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 500px);
         grid-column-gap: 20px;
         grid-row-gap: 20px;
+    }
+    .exteriores{
+        height: 600px;
+        margin-right: 10%;
+        margin-left: 10%;    
+    }
+    .estudio{
+        height: 600px;
+        margin-right: 10%;
+        margin-left: 10%;   
     }
 }
 // Tablets
-@media only screen and (min-width:321px) and (max-width:768px){
+@media only screen and (min-width:501px) and (max-width:768px){
     .galeria {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(4, 250px);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 400px);
         grid-column-gap: 20px;
         grid-row-gap: 20px;
     }
+    .exteriores{
+        height: 400px;
+        margin-right: 0%;
+        margin-left: 0%;
+        border-radius: 0 ;    
+    }
+    .estudio{
+        height: 400px;
+        margin-right: 0%;
+        margin-left: 0%; 
+        border-radius: 0 ;   
+    }
 }
 // Mobile
-@media only screen and (max-width:320px){
+@media only screen and (max-width:500px){
     .galeria {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(10, 250px);
+        grid-template-rows: repeat(9, 300px);
         grid-column-gap: 20px;
         grid-row-gap: 20px;
+    }
+    .exteriores{
+        height: 300px;
+        margin-right: 0%;
+        margin-left: 0%;
+        border-radius: 0 ;    
+    }
+    .estudio{
+        height: 300px;
+        margin-right: 0%;
+        margin-left: 0%; 
+        border-radius: 0 ;   
     }
 }
 

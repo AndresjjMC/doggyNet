@@ -2,30 +2,35 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta name="description" content="Las mejores fotos de perros en la mejor calidad, ademas hacemos sesiones de fotos a pedido">
-    <meta name="keywords" content="web, dog, dogs, pet, perro, friendly, photos, wallpapers, HD">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="description"
+        content="Las mejores fotos de perros en la mejor calidad, ademas hacemos sesiones de fotos a pedido" />
+    <meta name="keywords" content="web, dog, dogs, pet, perro, friendly, photos, wallpapers, HD" />
     <title>DoggyNet</title>
 </head>
 
 <body>
     <header>
-        <!-- Barra de Navegacion inicia -->
+    <!-- Barra de Navegacion inicia -->
         <nav class="navbar navbar-expand-md navbar-dark barraNav">
             <!-- Brand -->
-            <a class="logo" href="#">DoggyNet</a>
-
-            <!-- Toggler/collapsibe Button -->
+            <a class="navbar-brand logo" href="#">DoggyNet</a>
+        
+        <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Navbar links -->
+        <!-- Navbar links -->
             <div class="collapse navbar-collapse text-right" id="collapsibleNavbar">
                 <ul class="navbar-nav navItems">
                     <li class="nav-item">
@@ -43,26 +48,75 @@
                 </ul>
             </div>
         </nav>
-        <!-- Barra de Navegacion Fin -->
+    <!-- Barra de Navegacion Fin -->
     </header>
     <main class="fondo">
-        <h1>Inicio</h1>
+        <h1>Fotografía de perros</h1>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h2>Bienvenidos a DoggyNet</h2>
-                <p>Somos unos fanáticos de nuestros amigos perrunos, aquí podrás encontrar imágenes de alta calidad.</p>
-                <p>Además podes contactarnos para hacer una sesión de fotos a tu mascota.</p>
+                <h2 data-aos="fade-right" data-aos-duration="2000">Bienvenidos a DoggyNet</h2>
+                <p data-aos="fade-left" data-aos-duration="2000">
+                    Somos fanáticos de nuestros amigos perrunos, aquí podrás
+                    encontrar imágenes de alta calidad.
+                </p>
+                <p data-aos="fade-left" data-aos-duration="2000">
+                    Además podes contactarnos para hacer una sesión de fotos para vos y tu mascota.
+                </p>
             </div>
         </div>
-        <div class="container-fluid portada">
-            <div class="img img01"></div>
-            <div class="img img02"></div>
-            <div class="img img03"></div>
-            <div class="img img04"></div>
-            <div class="img img05"></div>
-            <div class="img img06"></div>
+    <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+                <li data-target="#demo" data-slide-to="4"></li>
+            </ul>
+
+        <!-- The slideshow -->
+            <div class="carousel-inner carouselSlides">
+                <div class="carousel-item active">
+                    <img class="img-fluid" src="./multimedia/carousel0.jpg" alt="tuyan" />
+                </div>
+                <div class="carousel-item active">
+                    <img class="img-fluid" src="./multimedia/carousel1.jpg" alt="olivia" />    
+                </div>
+                <div class="carousel-item active">
+                    <img class="img-fluid" src="./multimedia/carousel2.jpg" alt="New York" />   
+                </div>
+                <div class="carousel-item active">
+                    <img class="img-fluid" src="./multimedia/carousel3.jpg" alt="New York" />
+                </div>
+                <div class="carousel-item active">
+                    <img class="img-fluid" src="./multimedia/carousel4.jpg" alt="New York" />    
+                </div>
+            </div>
+
+        <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
         </div>
+    <!--Fin Carousel  -->
         
+        <section class="servicios">
+            <h2 data-aos="fade-right" data-aos-duration="2000">Nuestros servicios</h2>
+            
+            <div class="exteriores img-fluid">
+                <h3 data-aos="fade-right" data-aos-duration="2000">Sesiones Exteriores</h3>   
+            </div>
+            <p data-aos="fade-left" data-aos-duration="2000">Disponemos de varias locaciones, donde tu mascota puede disfrutar de la naturaleza.</p>
+            <div class="estudio img-fluid">
+                <h3 data-aos="fade-right" data-aos-duration="2000">Sesiones de Estudio</h3>
+            </div>
+            <p data-aos="fade-left" data-aos-duration="2000">Contamos con un estudio preparado para tu mascota, donde pueda sentirse en casa y estar cómodo.</p>
+        </section>
+        <h2 class="objetivo" data-aos="fade-down" data-aos-duration="2000">🐶Nuestro trabajo se basa en el respeto absoluto a la integridad de los perros y su bienestar es nuestro primer objetivo🐶</h2>
     </main>
 
     <footer class="footer">
@@ -78,13 +132,19 @@
                 <a href="https://www.whatsapp.com/?lang=es" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             </nav>
         </div>
-        
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
